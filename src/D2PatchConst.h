@@ -42,10 +42,8 @@
 *                                                                           *
 *****************************************************************************/
 
-#pragma once
-
-#ifndef _D2PATCHCONST_H
-#define _D2PATCHCONST_H
+#ifndef D2TEMPLATE89_D2PATCHCONST_H_
+#define D2TEMPLATE89_D2PATCHCONST_H_
 
 #define PATCH_JMP               0x000000E9
 #define PATCH_CALL              0x000000E8
@@ -59,4 +57,4 @@
 #define PATCH_RETN1C            0x00001CC2
 #define PATCH_NOPBLOCK          0x90909090
 
-#endif
+#endif /* D2TEMPLATE89_D2PATCHCONST_H_ */

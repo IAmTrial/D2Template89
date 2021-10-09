@@ -52,5 +52,4 @@ VAR(void*, SampleVariable2)
 
 VAR(char, SampleVariable3[256])
 
-// end of file ---------------------------------------------------------------
 #undef _D2VARS_H
