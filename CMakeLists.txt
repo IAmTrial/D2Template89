@@ -44,10 +44,16 @@ endif (MINGW)
 
 # List all of the source files here
 
+set(D2CONSTANTS_FILES
+    "src/D2Constants.h"
+
+    "src/D2Constants/D2UnitTypes.h"
+)
+
 set(SOURCE_FILES
     "src/resource.rc"
 
-    "src/D2Constants.h"
+    ${D2CONSTANTS_FILES}
     "src/D2DataTables.h"
     "src/D2PacketDef.h"
     "src/D2Patch.h"

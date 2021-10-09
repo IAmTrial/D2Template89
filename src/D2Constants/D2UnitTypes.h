@@ -32,25 +32,18 @@
 *   See the License for the specific language governing permissions and     *
 *   limitations under the License.                                          *
 *                                                                           *
-*---------------------------------------------------------------------------*
-*                                                                           *
-*   https://github.com/olivier-verville/D2Template                          *
-*                                                                           *
-*   This file is meant to declare various constant data. As you add more    *
-*   custom code to your library, you will be using many constant values     *
-*   used by the game's internal code. Unit types are a good example.        *
-*   Declaring constants allows you to assign a name to these constants      *
-*   which are more convenient to use in your source code.                   *
-*                                                                           *
-*   Another advantage is smaller impact in cases where these values would   *
-*   need to change. Rather than revising every single piece of code using   *
-*   this value, you only need to change your constant's value               *
-*                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2CONSTANTS_H_
-#define D2TEMPLATE89_D2CONSTANTS_H_
+#ifndef D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_
+#define D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_
 
-#include "D2Constants/D2UnitTypes.h"
+enum D2C_UnitTypes {
+  D2C_UnitTypes_kPlayer = 0,
+  D2C_UnitTypes_kMonster = 1,
+  D2C_UnitTypes_kObject = 2,
+  D2C_UnitTypes_kMissile = 3,
+  D2C_UnitTypes_kItem = 4,
+  D2C_UnitTypes_kTile = 5,
+};
 
-#endif /* D2TEMPLATE89_D2CONSTANTS_H_ */
+#endif /* D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_ */
