@@ -48,10 +48,8 @@
 *                                                                           *
 *****************************************************************************/
 
-#pragma once
-
-#ifndef _D2CONSTANTS_H
-#define _D2CONSTANTS_H
+#ifndef D2TEMPLATE89_D2CONSTANTS_H_
+#define D2TEMPLATE89_D2CONSTANTS_H_
 
 enum D2C_UnitTypes
 {
@@ -63,5 +61,4 @@ enum D2C_UnitTypes
     UNIT_TILE           // 5 - Tiles
 };
 
-// end of file ---------------------------------------------------------------
-#endif
+#endif /* D2TEMPLATE89_D2CONSTANTS_H_ */

@@ -42,10 +42,8 @@
 *                                                                           *
 *****************************************************************************/
 
-#pragma once
-
-#ifndef _D2PATCH_H
-#define _D2PATCH_H
+#ifndef D2TEMPLATE89_D2PATCH_H_
+#define D2TEMPLATE89_D2PATCH_H_
 
 #include "D2PatchConst.h"
 
@@ -59,5 +57,4 @@ static const DLLPatchStrc gptTemplatePatches[] =
     {D2DLL_INVALID} // this must be the last entry in the array!
 };
 
-// end of file --------------------------------------------------------------
-#endif
+#endif /* D2TEMPLATE89_D2PATCH_H_ */

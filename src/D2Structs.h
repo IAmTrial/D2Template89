@@ -78,4 +78,4 @@ struct D2UnitStrc
 
 // end of file --------------------------------------------------------------
 #pragma pack()
-#endif
+#endif /* D2TEMPLATE89_D2STRUCTS_H_ */
