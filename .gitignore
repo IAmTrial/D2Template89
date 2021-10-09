@@ -1,29 +1,99 @@
-# Compiled Object files
-*.slo
-*.lo
+# Visual C++ 6.0 Data Files
+*.ncb
+*.opt
+*.positions
+*.wwdb
+
+# Binaries
+*.a
+*.dll
+*.exe
+*.lib
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
+# CMake
+out/
+_deps/
+CMakeSettings.json
+*.dll.embed.manifest
+*.dll.intermediate.manifest
+*.exe.intermediate.manifest
+*.lastbuildstate
+*.vcxprojResolveAssemblyReference.cache
+*_manifest.rc
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+BuildLog.htm
+CMakeASM_NASMCompiler.cmake
+CMakeCCompiler.cmake
+CMakeCCompilerId.c
+CMakeCXXCompiler.cmake
+CMakeCXXCompilerId.cpp
+CMakeDetermineCompilerABI_C.bin
+CMakeDetermineCompilerABI_CXX.bin
+CMakeRCCompiler.cmake
+CMakeSystem.cmake
+CMakeCache.txt
+INSTALL_force.rule
+TargetDirectories.txt
+VCTargetsPath.txt
 
-# Executables
-*.exe
-*.out
-*.app
+cmake.check_cache
+cmake_install.cmake
+feature_tests.bin
+feature_tests.cxx
+generate.stamp
+generate.stamp.depend
+generate.stamp.list
+generate.stamp.rule
+nasm.props
+mt.dep
+
+# Debug / Intermediate Files
+*.ipch
+*.idb
+*.ilk
+*.iobj
+*.ipdb
+*.exp
+*.pch
+*.pdb
+*.recipe
+*.vcxproj.FileListAbsolute.txt
+
+# Resource Files
+*.aps
+*.res
+
+# Logs
+*.log
+*.plg
+*.tlog
+
+# Thumbnails
+*.DS_STORE
+*.db
+
+# Visual Studio 2005 Solution / Project Files
+*.vcproj
+
+# Visual Studio 2010 Solution / Project Files
+.vs
+
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio Code Analysis
+CodeAnalysisResultManifest.txt
+*.lastcodeanalysissucceeded
+*.nativecodeanalysis.all.xml
+*.nativecodeanalysis.sarif
+*.nativecodeanalysis.xml
+
+# Compression Formats
+*.7z
+*.rar
+*.zip
