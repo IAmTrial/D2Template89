@@ -71,6 +71,8 @@ set(SOURCE_FILES
     "src/DllError.h"
     "src/DLLmain.cpp"
     "src/DLLmain.h"
+    "src/patch.c"
+    "src/patch.h"
     "src/TemplateIncludes.h"
 )
 
