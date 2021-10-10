@@ -21,6 +21,8 @@
 #include <wchar.h>
 #include <windows.h>
 
+#include "DllError.h"
+
 void* d2dll_base_address_table[D2Dll_kNumDlls] = { 0 };
 
 /**
@@ -116,7 +118,7 @@ const wchar_t* D2Dll_GetPath(enum D2Dll dll) {
           kMessageCapacity,
           L"Unrecognized DLL with value %d.",
           dll);
-      D2TEMPLATE_LogFatalError(message, __FILEW__, __LINE__);
+      D2TEMPLATE_ExitWithMessage(message, __FILEW__, __LINE__);
       return L"";
     }
   }
@@ -136,7 +138,7 @@ HMODULE D2Dll_GetModuleHandle(enum D2Dll dll) {
           MAX_PATH + 21,
           L"Could not load DLL: %ls",
           path);
-      D2TEMPLATE_LogFatalError(message, __FILEW__, __LINE__);
+      D2TEMPLATE_ExitWithMessage(message, __FILEW__, __LINE__);
 
       goto bad_return;
     }
@@ -166,7 +168,7 @@ void* D2Dll_GetAddressFromExportedName(enum D2Dll dll, const char* exported_name
         kMessageCapacity,
         L"GetProcAddress failed with error code 0x%X.",
         GetLastError());
-    D2TEMPLATE_LogFatalError(message, __FILEW__, __LINE__);
+    D2TEMPLATE_ExitWithMessage(message, __FILEW__, __LINE__);
     goto bad_return;
   }
 
@@ -202,7 +204,7 @@ void* D2Dll_GetAddressFromOrdinal(enum D2Dll dll, unsigned short ordinal) {
         kMessageCapacity,
         L"GetProcAddress failed with error code 0x%X.",
         GetLastError());
-    D2TEMPLATE_LogFatalError(message, __FILEW__, __LINE__);
+    D2TEMPLATE_ExitWithMessage(message, __FILEW__, __LINE__);
     goto bad_return;
   }
 
