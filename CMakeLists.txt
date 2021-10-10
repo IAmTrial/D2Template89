@@ -61,6 +61,9 @@ set(SOURCE_FILES
 
     ${D2CONSTANTS_FILES}
     ${D2STRUCTS_FILES}
+
+    "src/D2Dll.c"
+    "src/D2Dll.h"
     "src/D2Patch.h"
     "src/D2PatchConst.h"
     "src/D2Ptrs.h"
