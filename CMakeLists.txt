@@ -64,16 +64,15 @@ set(SOURCE_FILES
 
     "src/D2Dll.c"
     "src/D2Dll.h"
-    "src/D2Patch.h"
     "src/D2PatchConst.h"
     "src/D2Ptrs.h"
     "src/DllError.c"
     "src/DllError.h"
     "src/DLLmain.cpp"
-    "src/DLLmain.h"
     "src/patch.c"
     "src/patch.h"
-    "src/TemplateIncludes.h"
+    "src/patches.c"
+    "src/patches.h"
 )
 
 # Output DLL
