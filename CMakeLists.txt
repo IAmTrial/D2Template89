@@ -60,6 +60,7 @@ set(SOURCE_FILES
     "src/resource.rc"
 
     ${D2CONSTANTS_FILES}
+    ${D2STRUCTS_FILES}
     "src/D2Patch.h"
     "src/D2PatchConst.h"
     "src/D2Ptrs.h"
