@@ -51,14 +51,6 @@
 #ifndef D2TEMPLATE89_D2CONSTANTS_H_
 #define D2TEMPLATE89_D2CONSTANTS_H_
 
-enum D2C_UnitTypes
-{
-    UNIT_PLAYER,        // 0 - Players
-    UNIT_MONSTER,       // 1 - Monsters
-    UNIT_OBJECT,        // 2 - Objects
-    UNIT_MISSILE,       // 3 - Missiles
-    UNIT_ITEM,          // 4 - Items
-    UNIT_TILE           // 5 - Tiles
-};
+#include "D2Constants/D2UnitTypes.h"
 
 #endif /* D2TEMPLATE89_D2CONSTANTS_H_ */

@@ -17,7 +17,7 @@
 
 /****************************************************************************
 *                                                                           *
-*   D2PacketDef.h                                                           *
+*   D2Constants.h                                                           *
 *   Copyright (C) Olivier Verville                                          *
 *                                                                           *
 *   Licensed under the Apache License, Version 2.0 (the "License");         *
@@ -32,45 +32,18 @@
 *   See the License for the specific language governing permissions and     *
 *   limitations under the License.                                          *
 *                                                                           *
-*---------------------------------------------------------------------------*
-*                                                                           *
-*   https://github.com/olivier-verville/D2Template                          *
-*                                                                           *
-*   This file is an expansion of D2Structs.h, meant to be used to declare   *
-*   structs representing network data packets used by the game to           *
-*   handle communications between the server and the client                 *
-*                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2PACKETDEF_H_
-#define D2TEMPLATE89_D2PACKETDEF_H_
+#ifndef D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_
+#define D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_
 
-#pragma pack(1)
-
-/****************************************************************************
-*                                                                           *
-* DECLARATIONS                                                              *
-*                                                                           *
-*****************************************************************************/
-
-struct D2GSPacketClt01;
-struct D2GSPacketClt02;
-struct D2GSPacketClt03;
-
-struct D2GSPacketSrv01;
-struct D2GSPacketSrv02;
-struct D2GSPacketSrv03;
-
-/****************************************************************************
-*                                                                           *
-* DEFINITIONS                                                               *
-*                                                                           *
-*****************************************************************************/
-
-struct D2GSPacketClt01
-{
-    //...
+enum D2C_UnitTypes {
+  D2C_UnitTypes_kPlayer = 0,
+  D2C_UnitTypes_kMonster = 1,
+  D2C_UnitTypes_kObject = 2,
+  D2C_UnitTypes_kMissile = 3,
+  D2C_UnitTypes_kItem = 4,
+  D2C_UnitTypes_kTile = 5,
 };
 
-#pragma pack()
-#endif /* D2TEMPLATE89_D2PACKETDEF_H_ */
+#endif /* D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_ */
