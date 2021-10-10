@@ -41,41 +41,9 @@
 *                                                                           *
 *****************************************************************************/
 
-#pragma once
-
 #ifndef D2TEMPLATE89_D2STRUCTS_H_
 #define D2TEMPLATE89_D2STRUCTS_H_
 
-#include "D2DataTables.h"
-#include "D2PacketDef.h"
+#include "D2Structs/D2LrtbRect.h"
 
-#pragma pack(1)
-
-/****************************************************************************
-*                                                                           *
-* DECLARATIONS                                                              *
-*                                                                           *
-*****************************************************************************/
-
-struct D2GameStrc;
-struct D2UnitStrc;
-
-/****************************************************************************
-*                                                                           *
-* DEFINITIONS                                                               *
-*                                                                           *
-*****************************************************************************/
-
-struct D2GameStrc
-{
-    //...
-};
-
-struct D2UnitStrc
-{
-    //...
-};
-
-// end of file --------------------------------------------------------------
-#pragma pack()
 #endif /* D2TEMPLATE89_D2STRUCTS_H_ */
