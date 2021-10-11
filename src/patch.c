@@ -84,11 +84,9 @@ bad:
 void Patch_Apply(struct Patch* patch) {
   BOOL is_write_process_memory_success;
 
-  unsigned char* base_address;
   unsigned char* address;
   const unsigned char* data;
 
-  base_address = (unsigned char*)D2Dll_GetModuleHandle(patch->dll);
   address = D2Dll_GetAddressFromOffset(patch->dll, patch->offset);
   data = patch->data;
 
