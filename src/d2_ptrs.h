@@ -44,8 +44,8 @@
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE_D2PTRS_H_
-#define D2TEMPLATE_D2PTRS_H_
+#ifndef D2TEMPLATE_D2_PTRS_H_
+#define D2TEMPLATE_D2_PTRS_H_
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  These are the macros used by the template core to declare                                                                                                                                                                   ///
@@ -86,4 +86,4 @@ extern DWORD __fastcall GetDllOffset(char* ModuleName, DWORD BaseAddress, int Of
 *                                                                               *
 *********************************************************************************/
 
-#endif /* D2TEMPLATE_D2PTRS_H_ */
+#endif /* D2TEMPLATE_D2_PTRS_H_ */

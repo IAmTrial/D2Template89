@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#ifndef D2TEMPLATE89_D2STDTYPES_H_
-#define D2TEMPLATE89_D2STDTYPES_H_
+#ifndef D2TEMPLATE89_D2_STD_TYPES_H_
+#define D2TEMPLATE89_D2_STD_TYPES_H_
 
 typedef signed char i8;
 typedef signed short i16;
@@ -26,4 +26,4 @@ typedef unsigned char u8;
 typedef unsigned short u16;
 typedef unsigned int u32;
 
-#endif /* D2TEMPLATE89_D2STDTYPES_H_ */
+#endif /* D2TEMPLATE89_D2_STD_TYPES_H_ */
