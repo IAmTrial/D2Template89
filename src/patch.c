@@ -91,7 +91,7 @@ void Patch_Apply(struct Patch* patch) {
   data = patch->data;
 
   if (patch->is_relative) {
-    data = data - address - patch->data_size;
+    data -= (ptrdiff_t)(address + patch->data_size);
     is_write_process_memory_success = WriteProcessMemory(
         GetCurrentProcess(),
         address,
