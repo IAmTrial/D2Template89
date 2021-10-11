@@ -64,13 +64,14 @@ set(SOURCE_FILES
 
     "src/d2_dll.c"
     "src/d2_dll.h"
-    "src/d2_patch_const.h"
     "src/d2_ptrs.h"
     "src/dll_error.c"
     "src/dll_error.h"
     "src/dll_main.c"
     "src/patch.c"
     "src/patch.h"
+    "src/patch_const.c"
+    "src/patch_const.h"
     "src/patches.c"
     "src/patches.h"
 )
