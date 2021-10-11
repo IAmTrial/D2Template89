@@ -47,7 +47,7 @@ BOOL WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, void* lpReserved) {
   switch (dwReason) {
     case DLL_PROCESS_ATTACH: {
       Patches_Apply();
-      break;
+      return TRUE;
     }
 
     default: {
