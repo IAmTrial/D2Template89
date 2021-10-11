@@ -45,69 +45,13 @@
 #include "filew.h"
 #include "patches.h"
 
-int __fastcall D2TEMPLATE_GetDebugPrivilege()
-{
-  void* hToken;
-  LUID luid;
-  TOKEN_PRIVILEGES tokenPrivileges;
-
-  if (OpenProcessToken(GetCurrentProcess(),TOKEN_ALL_ACCESS,&hToken) == 0)
-  {
-    D2TEMPLATE_ExitWithMessage(
-        L"OpenProcessToken Failed",
-        __FILEW__,
-        __LINE__);
-    return 0;
-  }
-
-  if (LookupPrivilegeValue(0,SE_DEBUG_NAME,&luid) == 0)
-  {
-    D2TEMPLATE_ExitWithMessage(
-        L"LookupPrivilegeValue Failed",
-        __FILEW__,
-        __LINE__);
-    CloseHandle(hToken);
-    return 0;
-  }
-
-  tokenPrivileges.PrivilegeCount = 1;
-  tokenPrivileges.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
-  tokenPrivileges.Privileges[0].Luid = luid;
-  if (AdjustTokenPrivileges(hToken,0,&tokenPrivileges,sizeof(tokenPrivileges),0,0) == 0)
-  {
-    D2TEMPLATE_ExitWithMessage(
-        L"AdjustTokenPrivileges Failed",
-        __FILEW__,
-        __LINE__);
-    CloseHandle(hToken);
-    return 0;
-  }
-
-  CloseHandle(hToken);
-  return 1;
-}
-
-int __stdcall DllAttach()
-{
-  D2TEMPLATE_GetDebugPrivilege();
-
-  Patches_Apply();
-
-  return 1;
-}
-
 int __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, void* lpReserved)
 {
   switch (dwReason)
   {
     case DLL_PROCESS_ATTACH:
     {
-      if (!DllAttach()) {
-        D2TEMPLATE_ExitWithMessage(
-            L"Couldn't attach to Diablo II",
-            __FILEW__,
-            __LINE__);
-      }
+      Patches_Apply();
       break;
     }
   }
