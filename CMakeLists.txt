@@ -44,6 +44,21 @@ endif (MINGW)
 
 # List all of the source files here
 
+set(D2FUNCTIONS_FILES
+    "src/d2_functions.c"
+    "src/d2_functions.h"
+
+    # Fog functions
+    "src/d2_functions/fog_functions.c"
+    "src/d2_functions/fog_functions.h"
+
+    "src/d2_functions/fog_functions/fog_alloc_client_memory.c"
+    "src/d2_functions/fog_functions/fog_alloc_client_memory.h"
+
+    "src/d2_functions/fog_functions/fog_free_client_memory.c"
+    "src/d2_functions/fog_functions/fog_free_client_memory.h"
+)
+
 set(D2CONSTANTS_FILES
     "src/d2_constants.h"
 
@@ -60,11 +75,14 @@ set(SOURCE_FILES
     "src/resource.rc"
 
     ${D2CONSTANTS_FILES}
+    ${D2FUNCTIONS_FILES}
     ${D2STRUCTS_FILES}
 
     "src/d2_dll.c"
     "src/d2_dll.h"
     "src/d2_ptrs.h"
+    "src/d2_std_types.h"
+    "src/d2_version.h"
     "src/dll_error.c"
     "src/dll_error.h"
     "src/dll_main.c"

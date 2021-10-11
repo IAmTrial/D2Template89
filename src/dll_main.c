@@ -41,11 +41,14 @@
 
 #include <windows.h>
 
+#include "d2_functions.h"
 #include "patches.h"
 
 BOOL WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, void* lpReserved) {
   switch (dwReason) {
     case DLL_PROCESS_ATTACH: {
+      D2_Functions_Init();
+
       Patches_Apply();
       return TRUE;
     }
