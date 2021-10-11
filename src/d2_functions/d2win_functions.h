@@ -15,12 +15,19 @@
  * limitations under the License.
  */
 
-#include "d2_functions.h"
+#ifndef D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_H_
+#define D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_H_
 
-#include "d2_functions/d2win_functions.h"
-#include "d2_functions/fog_functions.h"
+#include "d2win_functions/d2win_load_mpq.h"
 
-void D2_Functions_Init(void) {
-  D2_D2Win_Functions_Init();
-  D2_Fog_Functions_Init();
-}
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
+
+void D2_D2Win_Functions_Init(void);
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif /* __cplusplus */
+
+#endif /* D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_H_ */

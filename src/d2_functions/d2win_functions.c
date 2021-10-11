@@ -15,12 +15,10 @@
  * limitations under the License.
  */
 
-#include "d2_functions.h"
+#include "d2win_functions.h"
 
-#include "d2_functions/d2win_functions.h"
-#include "d2_functions/fog_functions.h"
+#include "d2win_functions/d2win_load_mpq.h"
 
-void D2_Functions_Init(void) {
-  D2_D2Win_Functions_Init();
-  D2_Fog_Functions_Init();
+void D2_D2Win_Functions_Init(void) {
+  D2_D2Win_LoadMpq_Init();
 }

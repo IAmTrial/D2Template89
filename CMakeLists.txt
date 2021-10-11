@@ -48,6 +48,14 @@ set(D2FUNCTIONS_FILES
     "src/d2_functions.c"
     "src/d2_functions.h"
 
+    # D2Win functions
+    "src/d2_functions/d2win_functions.c"
+    "src/d2_functions/d2win_functions.h"
+
+    "src/d2_functions/d2win_functions/d2win_load_mpq_shim.asm"
+    "src/d2_functions/d2win_functions/d2win_load_mpq.c"
+    "src/d2_functions/d2win_functions/d2win_load_mpq.h"
+
     # Fog functions
     "src/d2_functions/fog_functions.c"
     "src/d2_functions/fog_functions.h"

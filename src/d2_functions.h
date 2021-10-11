@@ -18,6 +18,7 @@
 #ifndef D2TEMPLATE89_D2_FUNCTIONS_H_
 #define D2TEMPLATE89_D2_FUNCTIONS_H_
 
+#include "d2_functions/d2win_functions.h"
 #include "d2_functions/fog_functions.h"
 
 #ifdef __cplusplus

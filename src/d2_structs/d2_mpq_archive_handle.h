@@ -15,12 +15,20 @@
  * limitations under the License.
  */
 
-#include "d2_functions.h"
+#ifndef D2TEMPLATE89_D2_STRUCTS_D2_MPQ_ARCHIVE_HANDLE_H_
+#define D2TEMPLATE89_D2_STRUCTS_D2_MPQ_ARCHIVE_HANDLE_H_
 
-#include "d2_functions/d2win_functions.h"
-#include "d2_functions/fog_functions.h"
+#include <windows.h>
 
-void D2_Functions_Init(void) {
-  D2_D2Win_Functions_Init();
-  D2_Fog_Functions_Init();
-}
+#include "../d2_std_types.h"
+
+#pragma pack(push, 1)
+
+/* sizeof: 0x10 */ struct D2MpqArchiveHandle {
+  /* 0x00 */ void* mpq_archive;
+  /* 0x04 */ char mpq_archive_path[MAX_PATH];
+};
+
+#pragma pack(pop)
+
+#endif /* D2TEMPLATE89_D2_STRUCTS_D2_MPQ_ARCHIVE_HANDLE_H_ */
