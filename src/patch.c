@@ -41,6 +41,44 @@
 
 #include "d2_dll.h"
 #include "dll_error.h"
+#include "patch_const.h"
+
+void ApplyNopPatch(
+    struct Patch* patch,
+    unsigned char* address,
+    const unsigned char* data,
+    BOOL* is_write_process_memory_success) {
+  size_t remaining_size;
+
+  remaining_size = patch->data_size;
+  while (remaining_size > 0) {
+    size_t bytes_write_count;
+
+    bytes_write_count = (remaining_size > sizeof(kPatchNop))
+        ? sizeof(kPatchNop)
+        : remaining_size;
+    *is_write_process_memory_success = WriteProcessMemory(
+        GetCurrentProcess(),
+        address,
+        data,
+        bytes_write_count,
+        NULL);
+    if (!(*is_write_process_memory_success)) {
+      goto bad;
+    }
+
+    remaining_size -= bytes_write_count;
+  }
+
+  return;
+
+bad:
+  return;
+}
+
+/**
+ * External
+ */
 
 void Patch_Apply(struct Patch* patch) {
   BOOL is_write_process_memory_success;
@@ -61,6 +99,8 @@ void Patch_Apply(struct Patch* patch) {
         &data,
         patch->data_size,
         NULL);
+  } else if (patch->data == kPatchNop) {
+    ApplyNopPatch(patch, address, data, &is_write_process_memory_success);
   } else {
     is_write_process_memory_success = WriteProcessMemory(
         GetCurrentProcess(),

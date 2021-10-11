@@ -53,7 +53,12 @@ extern const unsigned char kPatchJmp[1];
 extern const unsigned char kPatchCall[1];
 extern const unsigned char kPatchRet[1];
 extern const unsigned char kPatchRetX[1];
-extern const unsigned char kPatchNop[1];
+
+/*
+ * This buffer is larger than 1 byte, to optimize for patches that NOP
+ * entire sections of code.
+ */
+extern const unsigned char kPatchNop[256];
 
 #ifdef __cplusplus
 } /* extern "C" */
