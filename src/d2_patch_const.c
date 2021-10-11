@@ -45,18 +45,10 @@
 #ifndef D2TEMPLATE89_D2PATCHCONST_H_
 #define D2TEMPLATE89_D2PATCHCONST_H_
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
-extern const unsigned char kPatchJmp[1];
-extern const unsigned char kPatchCall[1];
-extern const unsigned char kPatchRet[1];
-extern const unsigned char kPatchRetX[1];
-extern const unsigned char kPatchNop[1];
-
-#ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+const unsigned char kPatchJmp[1] = { 0xE9 };
+const unsigned char kPatchCall[1] = { 0xE8 };
+const unsigned char kPatchRet[1] = { 0xC3 };
+const unsigned char kPatchRetX[1] = { 0xC2 };
+const unsigned char kPatchNop[1] = { 0x90 };
 
 #endif /* D2TEMPLATE89_D2PATCHCONST_H_ */
