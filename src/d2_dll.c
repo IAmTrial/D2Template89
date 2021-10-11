@@ -22,6 +22,7 @@
 #include <windows.h>
 
 #include "dll_error.h"
+#include "filew.h"
 
 void* d2dll_base_address_table[D2Dll_kNumDlls] = { 0 };
 

@@ -42,6 +42,7 @@
 #include <windows.h>
 
 #include "dll_error.h"
+#include "filew.h"
 #include "patches.h"
 
 int __fastcall D2TEMPLATE_GetDebugPrivilege()

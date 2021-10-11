@@ -41,6 +41,7 @@
 
 #include "d2_dll.h"
 #include "dll_error.h"
+#include "filew.h"
 #include "patch_const.h"
 
 void ApplyNopPatch(
