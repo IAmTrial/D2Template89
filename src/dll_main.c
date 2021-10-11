@@ -91,16 +91,6 @@ int __stdcall DllAttach()
 {
   D2TEMPLATE_GetDebugPrivilege();
 
-  void* hGame = GetCurrentProcess();
-  if (!hGame) 
-  {
-    D2TEMPLATE_ExitWithMessage(
-        L"Failed to retrieve process",
-        __FILEW__,
-        __LINE__);
-    return 0;
-  }
-
   Patches_Apply();
 
   return 1;

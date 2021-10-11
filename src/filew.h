@@ -25,7 +25,7 @@
     lit \
 ) prefix ## lit
 
-#define MDC_INTERNAL_EXPAND_MACRO(prefix, x) \
+#define D2TEMPLATE89_INTERNAL_EXPAND_MACRO(prefix, x) \
     D2TEMPLATE89_INTERNAL_CSTR_LIT_TO_CWSTR_LIT(prefix, x)
 
 #define __FILEW__ D2TEMPLATE89_INTERNAL_EXPAND_MACRO(L, __FILE__)
