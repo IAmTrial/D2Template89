@@ -48,9 +48,9 @@
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2CONSTANTS_H_
-#define D2TEMPLATE89_D2CONSTANTS_H_
+#ifndef D2TEMPLATE89_D2_CONSTANTS_H_
+#define D2TEMPLATE89_D2_CONSTANTS_H_
 
 #include "d2_constants/d2_unit_types.h"
 
-#endif /* D2TEMPLATE89_D2CONSTANTS_H_ */
+#endif /* D2TEMPLATE89_D2_CONSTANTS_H_ */

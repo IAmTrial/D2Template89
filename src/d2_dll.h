@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#ifndef D2TEMPLATE89_D2LIBS_H_
-#define D2TEMPLATE89_D2LIBS_H_
+#ifndef D2TEMPLATE89_D2_DLL_H_
+#define D2TEMPLATE89_D2_DLL_H_
 
 #include <stddef.h>
 #include <wchar.h>
@@ -62,4 +62,4 @@ void* D2Dll_GetAddressFromOrdinal(enum D2Dll dll, unsigned short ordinal);
 } /* extern "C" */
 #endif /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2LIBS_H_ */
+#endif /* D2TEMPLATE89_D2_DLL_H_ */

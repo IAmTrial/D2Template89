@@ -34,8 +34,8 @@
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_
-#define D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_
+#ifndef D2TEMPLATE89_D2_CONSTANTS_D2_UNIT_TYPES_H_
+#define D2TEMPLATE89_D2_CONSTANTS_D2_UNIT_TYPES_H_
 
 enum D2C_UnitTypes {
   D2C_UnitTypes_kPlayer = 0,
@@ -46,4 +46,4 @@ enum D2C_UnitTypes {
   D2C_UnitTypes_kTile = 5,
 };
 
-#endif /* D2TEMPLATE89_D2CONSTANTS_D2UNITTYPES_H_ */
+#endif /* D2TEMPLATE89_D2_CONSTANTS_D2_UNIT_TYPES_H_ */

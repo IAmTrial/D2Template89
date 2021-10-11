@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#ifndef D2TEMPLATE89_D2STRUCTS_D2LRTBRECT_H_
-#define D2TEMPLATE89_D2STRUCTS_D2LRTBRECT_H_
+#ifndef D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_
+#define D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_
 
 #include "../d2_std_types.h"
 
@@ -31,4 +31,4 @@
 
 #pragma pack(pop)
 
-#endif /* D2TEMPLATE89_D2STRUCTS_D2LRTBRECT_H_ */
+#endif /* D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_ */

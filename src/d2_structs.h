@@ -41,9 +41,9 @@
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2STRUCTS_H_
-#define D2TEMPLATE89_D2STRUCTS_H_
+#ifndef D2TEMPLATE89_D2_STRUCTS_H_
+#define D2TEMPLATE89_D2_STRUCTS_H_
 
 #include "d2_structs/d2_lrtb_rect.h"
 
-#endif /* D2TEMPLATE89_D2STRUCTS_H_ */
+#endif /* D2TEMPLATE89_D2_STRUCTS_H_ */

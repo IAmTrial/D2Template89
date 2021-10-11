@@ -33,8 +33,8 @@
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_DLLERROR_H_
-#define D2TEMPLATE89_DLLERROR_H_
+#ifndef D2TEMPLATE89_DLL_ERROR_H_
+#define D2TEMPLATE89_DLL_ERROR_H_
 
 #include <wchar.h>
 
@@ -59,4 +59,4 @@ void D2TEMPLATE_ExitWithMessage(
 } /* extern "C" */
 #endif /* __cplusplus */
 
-#endif /* D2TEMPLATE89_DLLERROR_H_ */
+#endif /* D2TEMPLATE89_DLL_ERROR_H_ */
