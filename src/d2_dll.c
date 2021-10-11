@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#include "D2Dll.h"
+#include "d2_dll.h"
 
 #include <stddef.h>
 #include <wchar.h>
 #include <windows.h>
 
-#include "DllError.h"
+#include "dll_error.h"
 
 void* d2dll_base_address_table[D2Dll_kNumDlls] = { 0 };
 

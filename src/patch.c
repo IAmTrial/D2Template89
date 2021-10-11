@@ -39,8 +39,8 @@
 #include <wchar.h>
 #include <windows.h>
 
-#include "D2Dll.h"
-#include "DllError.h"
+#include "d2_dll.h"
+#include "dll_error.h"
 
 void Patch_Apply(struct Patch* patch) {
   BOOL is_write_process_memory_success;

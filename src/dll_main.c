@@ -17,8 +17,7 @@
 
 /****************************************************************************
 *                                                                           *
-*   D2Constants.h                                                           *
-*   Copyright (C) Olivier Verville                                          *
+*   DLLmain.h                                                               *
 *                                                                           *
 *   Licensed under the Apache License, Version 2.0 (the "License");         *
 *   you may not use this file except in compliance with the License.        *
@@ -36,21 +35,91 @@
 *                                                                           *
 *   https://github.com/olivier-verville/D2Template                          *
 *                                                                           *
-*   This file is meant to declare various constant data. As you add more    *
-*   custom code to your library, you will be using many constant values     *
-*   used by the game's internal code. Unit types are a good example.        *
-*   Declaring constants allows you to assign a name to these constants      *
-*   which are more convenient to use in your source code.                   *
-*                                                                           *
-*   Another advantage is smaller impact in cases where these values would   *
-*   need to change. Rather than revising every single piece of code using   *
-*   this value, you only need to change your constant's value               *
+*   D2Template core file, do not modify unless you know what you're doing   *
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2CONSTANTS_H_
-#define D2TEMPLATE89_D2CONSTANTS_H_
+#include <windows.h>
 
-#include "D2Constants/D2UnitTypes.h"
+#include "dll_error.h"
+#include "patches.h"
 
-#endif /* D2TEMPLATE89_D2CONSTANTS_H_ */
+int __fastcall D2TEMPLATE_GetDebugPrivilege()
+{
+  void* hToken;
+  LUID luid;
+  TOKEN_PRIVILEGES tokenPrivileges;
+
+  if (OpenProcessToken(GetCurrentProcess(),TOKEN_ALL_ACCESS,&hToken) == 0)
+  {
+    D2TEMPLATE_ExitWithMessage(
+        L"OpenProcessToken Failed",
+        __FILEW__,
+        __LINE__);
+    return 0;
+  }
+
+  if (LookupPrivilegeValue(0,SE_DEBUG_NAME,&luid) == 0)
+  {
+    D2TEMPLATE_ExitWithMessage(
+        L"LookupPrivilegeValue Failed",
+        __FILEW__,
+        __LINE__);
+    CloseHandle(hToken);
+    return 0;
+  }
+
+  tokenPrivileges.PrivilegeCount = 1;
+  tokenPrivileges.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
+  tokenPrivileges.Privileges[0].Luid = luid;
+  if (AdjustTokenPrivileges(hToken,0,&tokenPrivileges,sizeof(tokenPrivileges),0,0) == 0)
+  {
+    D2TEMPLATE_ExitWithMessage(
+        L"AdjustTokenPrivileges Failed",
+        __FILEW__,
+        __LINE__);
+    CloseHandle(hToken);
+    return 0;
+  }
+
+  CloseHandle(hToken);
+  return 1;
+}
+
+int __stdcall DllAttach()
+{
+  D2TEMPLATE_GetDebugPrivilege();
+
+  void* hGame = GetCurrentProcess();
+  if (!hGame) 
+  {
+    D2TEMPLATE_ExitWithMessage(
+        L"Failed to retrieve process",
+        __FILEW__,
+        __LINE__);
+    return 0;
+  }
+
+  Patches_Apply();
+
+  return 1;
+}
+
+int __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, void* lpReserved)
+{
+  switch (dwReason)
+  {
+    case DLL_PROCESS_ATTACH:
+    {
+      if (!DllAttach()) {
+        D2TEMPLATE_ExitWithMessage(
+            L"Couldn't attach to Diablo II",
+            __FILEW__,
+            __LINE__);
+      }
+      break;
+    }
+  }
+
+  return TRUE;
+}

@@ -44,6 +44,6 @@
 #ifndef D2TEMPLATE89_D2STRUCTS_H_
 #define D2TEMPLATE89_D2STRUCTS_H_
 
-#include "D2Structs/D2LrtbRect.h"
+#include "d2_structs/d2_lrtb_rect.h"
 
 #endif /* D2TEMPLATE89_D2STRUCTS_H_ */

@@ -17,7 +17,8 @@
 
 /****************************************************************************
 *                                                                           *
-*   DLLmain.h                                                               *
+*   D2Constants.h                                                           *
+*   Copyright (C) Olivier Verville                                          *
 *                                                                           *
 *   Licensed under the Apache License, Version 2.0 (the "License");         *
 *   you may not use this file except in compliance with the License.        *
@@ -31,41 +32,25 @@
 *   See the License for the specific language governing permissions and     *
 *   limitations under the License.                                          *
 *                                                                           *
+*---------------------------------------------------------------------------*
+*                                                                           *
+*   https://github.com/olivier-verville/D2Template                          *
+*                                                                           *
+*   This file is meant to declare various constant data. As you add more    *
+*   custom code to your library, you will be using many constant values     *
+*   used by the game's internal code. Unit types are a good example.        *
+*   Declaring constants allows you to assign a name to these constants      *
+*   which are more convenient to use in your source code.                   *
+*                                                                           *
+*   Another advantage is smaller impact in cases where these values would   *
+*   need to change. Rather than revising every single piece of code using   *
+*   this value, you only need to change your constant's value               *
+*                                                                           *
 *****************************************************************************/
 
-#include "DllError.h"
+#ifndef D2TEMPLATE89_D2CONSTANTS_H_
+#define D2TEMPLATE89_D2CONSTANTS_H_
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <wchar.h>
-#include <windows.h>
+#include "d2_constants/d2_unit_types.h"
 
-#define MESSAGE_FORMAT L"File: %ls\n" \
-    L"Line: %d" \
-    L"%ls"
-
-/*
- * This is allocated as a global, so calls to error functions do not
- * trigger stack overflow error.
- */
-static wchar_t full_message[D2TEMPLATE_Error_kMessageCapacity];
-
-/**
- * External
- */
-
-void D2TEMPLATE_ExitWithMessage(
-    const wchar_t* message,
-    const wchar_t* file,
-    int line) {
-
-  _snwprintf(
-      full_message,
-      D2TEMPLATE_Error_kMessageCapacity,
-      MESSAGE_FORMAT,
-      file,
-      line,
-      message);
-  MessageBoxW(NULL, L"D2Template Error", message, MB_OK | MB_ICONERROR);
-  exit(EXIT_FAILURE);
-}
+#endif /* D2TEMPLATE89_D2CONSTANTS_H_ */
