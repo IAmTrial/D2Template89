@@ -17,7 +17,8 @@
 
 /****************************************************************************
 *                                                                           *
-*   D2Vars.h                                                                *
+*   D2Constants.h                                                           *
+*   Copyright (C) Olivier Verville                                          *
 *                                                                           *
 *   Licensed under the Apache License, Version 2.0 (the "License");         *
 *   you may not use this file except in compliance with the License.        *
@@ -35,21 +36,21 @@
 *                                                                           *
 *   https://github.com/olivier-verville/D2Template                          *
 *                                                                           *
-*   This file is used to declare your own global variables to use           *
-*   within your code. These variables can be used anywhere in your code     *
+*   This file is meant to declare various constant data. As you add more    *
+*   custom code to your library, you will be using many constant values     *
+*   used by the game's internal code. Unit types are a good example.        *
+*   Declaring constants allows you to assign a name to these constants      *
+*   which are more convenient to use in your source code.                   *
+*                                                                           *
+*   Another advantage is smaller impact in cases where these values would   *
+*   need to change. Rather than revising every single piece of code using   *
+*   this value, you only need to change your constant's value               *
 *                                                                           *
 *****************************************************************************/
 
-#ifdef _D2VARS_H
-#define VAR(Type, Name)         Type Name;
-#else
-#define VAR(Type, Name)         extern Type Name;
-#endif
+#ifndef D2TEMPLATE89_D2CONSTANTS_H_
+#define D2TEMPLATE89_D2CONSTANTS_H_
 
-VAR(DWORD, SampleVariable1)
+#include "d2_constants/d2_unit_types.h"
 
-VAR(void*, SampleVariable2)
-
-VAR(char, SampleVariable3[256])
-
-#undef _D2VARS_H
+#endif /* D2TEMPLATE89_D2CONSTANTS_H_ */

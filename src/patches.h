@@ -17,7 +17,7 @@
 
 /****************************************************************************
 *                                                                           *
-*   D2PatchConst.h                                                          *
+*   D2Patch.h                                                               *
 *   Copyright (C) Olivier Verville                                          *
 *                                                                           *
 *   Licensed under the Apache License, Version 2.0 (the "License");         *
@@ -36,25 +36,23 @@
 *                                                                           *
 *   https://github.com/olivier-verville/D2Template                          *
 *                                                                           *
-*   This file defines various expressions to simplify the declaration of    *
-*   patches in D2Patch.h, and you shouldn't modify this file unless you     *
-*   know what you're doing.                                                 *
+*   This file is where you declare all your patches, in order to inject     *
+*   your own code into the game. Each patch should be declared in the       *
+*   array, in order to be handled by D2Template's patcher                   *
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2PATCHCONST_H_
-#define D2TEMPLATE89_D2PATCHCONST_H_
+#ifndef D2TEMPLATE89_PATCHES_H_
+#define D2TEMPLATE89_PATCHES_H_
 
-#define PATCH_JMP               0x000000E9
-#define PATCH_CALL              0x000000E8
-#define PATCH_RETN              0x000000C3
-#define PATCH_RETN4             0x000004C2
-#define PATCH_RETN8             0x000008C2
-#define PATCH_RETN0C            0x00000CC2
-#define PATCH_RETN10            0x000010C2
-#define PATCH_RETN14            0x000014C2
-#define PATCH_RETN18            0x000018C2
-#define PATCH_RETN1C            0x00001CC2
-#define PATCH_NOPBLOCK          0x90909090
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2PATCHCONST_H_ */
+void Patches_Apply(void);
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif /* __cplusplus */
+
+#endif /* D2TEMPLATE89_PATCHES_H_ */

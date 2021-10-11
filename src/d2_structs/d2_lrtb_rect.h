@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2STRUCTS_D2LRTBRECT_H_
 #define D2TEMPLATE89_D2STRUCTS_D2LRTBRECT_H_
 
-#include "../D2StdTypes.h"
+#include "../d2_std_types.h"
 
 #pragma pack(push, 1)
 

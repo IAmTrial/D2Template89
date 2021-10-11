@@ -45,15 +45,15 @@ endif (MINGW)
 # List all of the source files here
 
 set(D2CONSTANTS_FILES
-    "src/D2Constants.h"
+    "src/d2_constants.h"
 
-    "src/D2Constants/D2UnitTypes.h"
+    "src/d2_constants/d2_unit_types.h"
 )
 
 set(D2STRUCTS_FILES
-    "src/D2Structs.h"
+    "src/d2_structs.h"
 
-    "src/D2Structs/D2LrtbRect.h"
+    "src/d2_structs/d2_lrtb_rect.h"
 )
 
 set(SOURCE_FILES
@@ -61,12 +61,19 @@ set(SOURCE_FILES
 
     ${D2CONSTANTS_FILES}
     ${D2STRUCTS_FILES}
-    "src/D2Patch.h"
-    "src/D2PatchConst.h"
-    "src/D2Ptrs.h"
-    "src/DLLmain.cpp"
-    "src/DLLmain.h"
-    "src/TemplateIncludes.h"
+
+    "src/d2_dll.c"
+    "src/d2_dll.h"
+    "src/d2_ptrs.h"
+    "src/dll_error.c"
+    "src/dll_error.h"
+    "src/dll_main.c"
+    "src/patch.c"
+    "src/patch.h"
+    "src/patch_const.c"
+    "src/patch_const.h"
+    "src/patches.c"
+    "src/patches.h"
 )
 
 # Output DLL

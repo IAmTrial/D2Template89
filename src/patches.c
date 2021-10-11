@@ -42,19 +42,26 @@
 *                                                                           *
 *****************************************************************************/
 
-#ifndef D2TEMPLATE89_D2PATCH_H_
-#define D2TEMPLATE89_D2PATCH_H_
+#include "patches.h"
 
-#include "D2PatchConst.h"
+#include "patch.h"
 
-static const DLLPatchStrc gptTemplatePatches[] =
-{
-    /*
-        All your patches should be added here
-        Keep it organized to save yourself some headache
-    */
-    
-    {D2DLL_INVALID} // this must be the last entry in the array!
+static struct Patch patches[] = {
+  {0}
 };
 
-#endif /* D2TEMPLATE89_D2PATCH_H_ */
+enum {
+  kPatchesCount = sizeof(patches) / sizeof(patches[0]),
+};
+
+/**
+ * External
+ */
+
+void Patches_Apply(void) {
+  size_t i;
+
+  for (i = 0; i < kPatchesCount; ++i) {
+    Patch_Apply(&patches[i]);
+  }
+}
