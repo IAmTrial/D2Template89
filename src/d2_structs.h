@@ -45,5 +45,6 @@
 #define D2TEMPLATE89_D2_STRUCTS_H_
 
 #include "d2_structs/d2_lrtb_rect.h"
+#include "d2_structs/d2_mpq_archive_handle.h"
 
 #endif /* D2TEMPLATE89_D2_STRUCTS_H_ */

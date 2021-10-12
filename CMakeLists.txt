@@ -44,6 +44,48 @@ endif (MINGW)
 
 # List all of the source files here
 
+set(D2FUNCTIONS_FILES
+    "src/d2_functions.c"
+    "src/d2_functions.h"
+
+    # D2Win functions
+    "src/d2_functions/d2win_functions.c"
+    "src/d2_functions/d2win_functions.h"
+
+    "src/d2_functions/d2win_functions/d2win_load_mpq_shim.asm"
+    "src/d2_functions/d2win_functions/d2win_load_mpq.c"
+    "src/d2_functions/d2win_functions/d2win_load_mpq.h"
+
+    # Fog functions
+    "src/d2_functions/fog_functions.c"
+    "src/d2_functions/fog_functions.h"
+
+    "src/d2_functions/fog_functions/fog_alloc_client_memory.c"
+    "src/d2_functions/fog_functions/fog_alloc_client_memory.h"
+
+    "src/d2_functions/fog_functions/fog_free_client_memory.c"
+    "src/d2_functions/fog_functions/fog_free_client_memory.h"
+)
+
+set(D2VARIABLES_FILES
+    "src/d2_variables.c"
+    "src/d2_variables.h"
+
+    # BNClient variables
+    "src/d2_variables/bnclient_variables.c"
+    "src/d2_variables/bnclient_variables.h"
+
+    "src/d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.c"
+    "src/d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.h"
+
+    # D2Client variables
+    "src/d2_variables/d2client_variables.c"
+    "src/d2_variables/d2client_variables.h"
+
+    "src/d2_variables/d2client_variables/d2client_is_automap_open.c"
+    "src/d2_variables/d2client_variables/d2client_is_automap_open.h"
+)
+
 set(D2CONSTANTS_FILES
     "src/d2_constants.h"
 
@@ -60,11 +102,14 @@ set(SOURCE_FILES
     "src/resource.rc"
 
     ${D2CONSTANTS_FILES}
+    ${D2FUNCTIONS_FILES}
     ${D2STRUCTS_FILES}
+    ${D2VARIABLES_FILES}
 
     "src/d2_dll.c"
     "src/d2_dll.h"
-    "src/d2_ptrs.h"
+    "src/d2_std_types.h"
+    "src/d2_version.h"
     "src/dll_error.c"
     "src/dll_error.h"
     "src/dll_main.c"
