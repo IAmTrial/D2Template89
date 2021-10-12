@@ -71,6 +71,14 @@ set(D2VARIABLES_FILES
     "src/d2_variables.c"
     "src/d2_variables.h"
 
+    # BNClient variables
+    "src/d2_variables/bnclient_variables.c"
+    "src/d2_variables/bnclient_variables.h"
+
+    "src/d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.c"
+    "src/d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.h"
+
+    # D2Client variables
     "src/d2_variables/d2client_variables.c"
     "src/d2_variables/d2client_variables.h"
 

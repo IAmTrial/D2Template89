@@ -15,12 +15,19 @@
  * limitations under the License.
  */
 
-#include "d2_variables.h"
+#ifndef D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_
+#define D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_
 
-#include "d2_variables/bnclient_variables.h"
-#include "d2_variables/d2client_variables.h"
+#include "bnclient_variables/bnclient_gateway_ip_v4_address.h"
 
-void D2_Variables_Init(void) {
-  D2_BNClient_Variables_Init();
-  D2_D2Client_Variables_Init();
-}
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
+
+void D2_BNClient_Variables_Init(void);
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif /* __cplusplus */
+
+#endif /* D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_ */

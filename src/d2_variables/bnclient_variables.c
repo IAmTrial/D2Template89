@@ -15,12 +15,10 @@
  * limitations under the License.
  */
 
-#include "d2_variables.h"
+#include "bnclient_variables.h"
 
-#include "d2_variables/bnclient_variables.h"
-#include "d2_variables/d2client_variables.h"
+#include "bnclient_variables/bnclient_gateway_ip_v4_address.h"
 
-void D2_Variables_Init(void) {
-  D2_BNClient_Variables_Init();
-  D2_D2Client_Variables_Init();
+void D2_BNClient_Variables_Init(void) {
+  D2_BNClient_GatewayIpV4Address_Init();
 }
