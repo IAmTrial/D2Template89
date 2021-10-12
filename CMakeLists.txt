@@ -108,7 +108,6 @@ set(SOURCE_FILES
 
     "src/d2_dll.c"
     "src/d2_dll.h"
-    "src/d2_ptrs.h"
     "src/d2_std_types.h"
     "src/d2_version.h"
     "src/dll_error.c"
