@@ -67,6 +67,17 @@ set(D2FUNCTIONS_FILES
     "src/d2_functions/fog_functions/fog_free_client_memory.h"
 )
 
+set(D2VARIABLES_FILES
+    "src/d2_variables.c"
+    "src/d2_variables.h"
+
+    "src/d2_variables/d2client_variables.c"
+    "src/d2_variables/d2client_variables.h"
+
+    "src/d2_variables/d2client_variables/d2client_is_automap_open.c"
+    "src/d2_variables/d2client_variables/d2client_is_automap_open.h"
+)
+
 set(D2CONSTANTS_FILES
     "src/d2_constants.h"
 
@@ -85,6 +96,7 @@ set(SOURCE_FILES
     ${D2CONSTANTS_FILES}
     ${D2FUNCTIONS_FILES}
     ${D2STRUCTS_FILES}
+    ${D2VARIABLES_FILES}
 
     "src/d2_dll.c"
     "src/d2_dll.h"

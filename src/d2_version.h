@@ -39,7 +39,6 @@
 #define D2_VERSION_1_13C 201003230L
 #define D2_VERSION_1_13D 201110270L
 
-
 /* Set D2_VERSION here. */
 #ifndef D2_VERSION
   #define D2_VERSION 
