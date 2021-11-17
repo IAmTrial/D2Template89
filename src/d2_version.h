@@ -26,6 +26,7 @@
  * #define D2_VERSION D2_VERSION_1_13C
  */
 
+#define D2_VERSION_NOT_SET 0L
 #define D2_VERSION_1_07 200106270L
 #define D2_VERSION_1_08 200106271L
 #define D2_VERSION_1_09 200108200L
@@ -39,9 +40,14 @@
 #define D2_VERSION_1_13C 201003230L
 #define D2_VERSION_1_13D 201110270L
 
-/* Set D2_VERSION here. */
-#ifndef D2_VERSION
-  #define D2_VERSION 
-#endif /* D2_VERSION */
+/*
+ * Define D2_VERSION here using one of the values, for example:
+ * #define D2_VERSION D2_VERSION_1_10
+ */
+#define D2_VERSION D2_VERSION_NOT_SET
+
+#if !defined(D2_VERSION) || D2_VERSION == D2_VERSION_NOT_SET
+  #error D2_VERSION is not defined.
+#endif /* !defined(D2_VERSION) || D2_VERSION == D2_VERSION_NOT_SET */
 
 #endif /* D2TEMPLATE89_D2_VERSION_H_ */
