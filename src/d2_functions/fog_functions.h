@@ -23,12 +23,12 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 void D2_Fog_Functions_Init(void);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_H_ */
+#endif  /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_H_ */

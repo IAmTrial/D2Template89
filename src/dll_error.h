@@ -40,7 +40,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 enum {
   /*
@@ -56,7 +56,7 @@ void D2TEMPLATE_ExitWithMessage(
     int line);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_DLL_ERROR_H_ */
+#endif  /* D2TEMPLATE89_DLL_ERROR_H_ */

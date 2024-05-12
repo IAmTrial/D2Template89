@@ -30,6 +30,6 @@
 
 #define __FILEW__ D2TEMPLATE89_INTERNAL_EXPAND_MACRO(L, __FILE__)
 
-#endif /* _MSC_VER < 1600 */
+#endif  /* _MSC_VER < 1600 */
 
-#endif /* D2TEMPLATE89_FILEW_H_ */
+#endif  /* D2TEMPLATE89_FILEW_H_ */

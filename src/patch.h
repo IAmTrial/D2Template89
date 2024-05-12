@@ -42,7 +42,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 struct Patch {
   enum D2Dll dll;
@@ -55,7 +55,7 @@ struct Patch {
 void Patch_Apply(struct Patch* patch);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_PATCH_H_ */
+#endif  /* D2TEMPLATE89_PATCH_H_ */

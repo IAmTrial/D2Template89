@@ -22,7 +22,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 void D2_Fog_Free_Init(void);
 
@@ -33,7 +33,7 @@ int D2_Fog_Free(
     i32 unused__set_to_0);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_ */
+#endif  /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_ */

@@ -53,12 +53,12 @@ VS_VERSION_INFO    VERSIONINFO
       VALUE "ProductVersion",   "0.0.0.0"
       VALUE "SpecialBuild",     ""
       VALUE "Support",          ""
-    } /* BLOCK "040904E4" */
-  } /* BLOCK "StringFileInfo" */
+    }  /* BLOCK "040904E4" */
+  }  /* BLOCK "StringFileInfo" */
   BLOCK "VarFileInfo"
   {
     VALUE "Translation", 0x409, 1252 /* 1252 = 0x04E4 */
-  } /* BLOCK "VarFileInfo" */
+  }  /* BLOCK "VarFileInfo" */
 }
 
-#endif /* D2TEMPLATE89_RESOURCE_RC_ */
+#endif  /* D2TEMPLATE89_RESOURCE_RC_ */

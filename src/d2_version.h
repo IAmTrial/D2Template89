@@ -44,10 +44,10 @@
  * Define D2_VERSION here using one of the values, for example:
  * #define D2_VERSION D2_VERSION_1_10
  */
-#define D2_VERSION D2_VERSION_NOT_SET
+#define D2_VERSION D2_VERSION_1_13C
 
 #if !defined(D2_VERSION) || D2_VERSION == D2_VERSION_NOT_SET
   #error D2_VERSION is not defined.
-#endif /* !defined(D2_VERSION) || D2_VERSION == D2_VERSION_NOT_SET */
+#endif  /* !defined(D2_VERSION) || D2_VERSION == D2_VERSION_NOT_SET */
 
-#endif /* D2TEMPLATE89_D2_VERSION_H_ */
+#endif  /* D2TEMPLATE89_D2_VERSION_H_ */

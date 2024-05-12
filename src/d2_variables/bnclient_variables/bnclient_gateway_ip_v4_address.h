@@ -20,14 +20,14 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 extern char** D2_BNClient_GatewayIpV4Address;
 
 void D2_BNClient_GatewayIpV4Address_Init(void);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_BNCLIENT_GATEWAY_IP_V4_ADDRESS_H_ */
+#endif  /* D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_BNCLIENT_GATEWAY_IP_V4_ADDRESS_H_ */

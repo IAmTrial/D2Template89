@@ -22,7 +22,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 void D2_Fog_Alloc_Init(void);
 
@@ -33,7 +33,7 @@ void* D2_Fog_Alloc(
     i32 unused__set_to_0);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_H_ */
+#endif  /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_H_ */
