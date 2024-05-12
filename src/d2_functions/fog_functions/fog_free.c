@@ -41,7 +41,7 @@ static unsigned short GetOrdinal(void) {
 
 void D2_Fog_Free_Init(void) {
   func_ptr = (FuncType)D2Dll_GetAddressFromOrdinal(
-      D2Dll_kD2GFX,
+      D2Dll_kFog,
       GetOrdinal());
 }
 
