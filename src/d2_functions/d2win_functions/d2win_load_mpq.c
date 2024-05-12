@@ -55,9 +55,6 @@ struct D2MpqArchiveHandle* D2_D2Win_LoadMpq_1_11_Shim(
 
 #endif
 
-extern FuncType D2_D2Win_LoadMpq_FuncPtr;
-FuncType D2_D2Win_LoadMpq_FuncPtr;
-
 static ptrdiff_t GetOffset(void) {
 #if D2_VERSION == D2_VERSION_1_09D
   return 0x142FB;
@@ -76,10 +73,11 @@ static ptrdiff_t GetOffset(void) {
  * External
  */
 
+FuncType D2_D2Win_LoadMpq_FuncPtr;
+
 void D2_D2Win_LoadMpq_Init(void) {
-  D2_D2Win_LoadMpq_FuncPtr = (FuncType)D2Dll_GetAddressFromOffset(
-      D2Dll_kD2Win,
-      GetOffset());
+  D2_D2Win_LoadMpq_FuncPtr =
+      (FuncType)D2Dll_GetAddressFromOffset(D2Dll_kD2Win, GetOffset());
 }
 
 #if D2_VERSION <= D2_VERSION_1_10

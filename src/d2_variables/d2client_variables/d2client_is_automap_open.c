@@ -45,7 +45,6 @@ static ptrdiff_t GetOffset(void) {
 i32* D2_D2Client_IsAutomapOpen;
 
 void D2_D2Client_IsAutomapOpen_Init(void) {
-  D2_D2Client_IsAutomapOpen = D2Dll_GetAddressFromOffset(
-      D2Dll_kD2Client,
-      GetOffset());
+  D2_D2Client_IsAutomapOpen =
+      D2Dll_GetAddressFromOffset(D2Dll_kD2Client, GetOffset());
 }
