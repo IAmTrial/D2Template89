@@ -60,11 +60,11 @@ set(D2FUNCTIONS_FILES
     "src/d2_functions/fog_functions.c"
     "src/d2_functions/fog_functions.h"
 
-    "src/d2_functions/fog_functions/fog_alloc_client_memory.c"
-    "src/d2_functions/fog_functions/fog_alloc_client_memory.h"
+    "src/d2_functions/fog_functions/fog_alloc.c"
+    "src/d2_functions/fog_functions/fog_alloc.h"
 
-    "src/d2_functions/fog_functions/fog_free_client_memory.c"
-    "src/d2_functions/fog_functions/fog_free_client_memory.h"
+    "src/d2_functions/fog_functions/fog_free.c"
+    "src/d2_functions/fog_functions/fog_free.h"
 )
 
 set(D2VARIABLES_FILES
