@@ -45,7 +45,6 @@ static ptrdiff_t GetOffset(void) {
 char** D2_BNClient_GatewayIpV4Address;
 
 void D2_BNClient_GatewayIpV4Address_Init(void) {
-  D2_BNClient_GatewayIpV4Address = D2Dll_GetAddressFromOffset(
-      D2Dll_kBNClient,
-      GetOffset());
+  D2_BNClient_GatewayIpV4Address =
+      D2Dll_GetAddressFromOffset(D2Dll_kBNClient, GetOffset());
 }

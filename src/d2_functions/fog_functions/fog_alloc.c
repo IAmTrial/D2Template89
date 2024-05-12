@@ -40,9 +40,7 @@ static unsigned short GetOrdinal(void) {
  */
 
 void D2_Fog_Alloc_Init(void) {
-  func_ptr = (FuncType)D2Dll_GetAddressFromOrdinal(
-      D2Dll_kFog,
-      GetOrdinal());
+  func_ptr = (FuncType)D2Dll_GetAddressFromOrdinal(D2Dll_kFog, GetOrdinal());
 }
 
 void* D2_Fog_Alloc(
