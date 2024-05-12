@@ -33,79 +33,98 @@ void* d2dll_base_address_table[D2Dll_kNumDlls] = { 0 };
 const wchar_t* D2Dll_GetPath(enum D2Dll dll) {
   switch (dll) {
     case D2Dll_kBNClient: {
-      return L"BNClient.dll";
+      static const wchar_t kPath[] = L"BNClient.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Client: {
-      return L"D2Client.dll";
+      static const wchar_t kPath[] = L"D2Client.dll";
+      return kPath;
     }
 
     case D2Dll_kD2CMP: {
-      return L"D2CMP.dll";
+      static const wchar_t kPath[] = L"D2CMP.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Common: {
-      return L"D2Common.dll";
+      static const wchar_t kPath[] = L"D2Common.dll";
+      return kPath;
     }
 
     case D2Dll_kD2DDraw: {
-      return L"D2DDraw.dll";
+      static const wchar_t kPath[] = L"D2DDraw.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Direct3D: {
-      return L"D2Direct3D.dll";
+      static const wchar_t kPath[] = L"D2Direct3D.dll";
+      return kPath;
     }
 
     case D2Dll_kD2GDI: {
-      return L"D2GDI.dll";
+      static const wchar_t kPath[] = L"D2GDI.dll";
+      return kPath;
     }
 
     case D2Dll_kD2GFX: {
-      return L"D2GFX.dll";
+      static const wchar_t kPath[] = L"D2GFX.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Game: {
-      return L"D2Game.dll";
+      static const wchar_t kPath[] = L"D2Game.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Glide: {
-      return L"D2Glide.dll";
+      static const wchar_t kPath[] = L"D2Glide.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Lang: {
-      return L"D2Lang.dll";
+      static const wchar_t kPath[] = L"D2Lang.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Launch: {
-      return L"D2Launch.dll";
+      static const wchar_t kPath[] = L"D2Launch.dll";
+      return kPath;
     }
 
     case D2Dll_kD2MCPClient: {
-      return L"D2MCPClient.dll";
+      static const wchar_t kPath[] = L"D2MCPClient.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Multi: {
-      return L"D2Multi.dll";
+      static const wchar_t kPath[] = L"D2Multi.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Net: {
-      return L"D2Net.dll";
+      static const wchar_t kPath[] = L"D2Net.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Sound: {
-      return L"D2Sound.dll";
+      static const wchar_t kPath[] = L"D2Sound.dll";
+      return kPath;
     }
 
     case D2Dll_kD2Win: {
-      return L"D2Win.dll";
+      static const wchar_t kPath[] = L"D2Win.dll";
+      return kPath;
     }
 
     case D2Dll_kFog: {
-      return L"Fog.dll";
+      static const wchar_t kPath[] = L"Fog.dll";
+      return kPath;
     }
 
     case D2Dll_kStorm: {
-      return L"Storm.dll";
+      static const wchar_t kPath[] = L"Storm.dll";
+      return kPath;
     }
 
     default: {
