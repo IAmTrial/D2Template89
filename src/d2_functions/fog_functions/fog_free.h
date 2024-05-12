@@ -15,40 +15,25 @@
  * limitations under the License.
  */
 
-#include "fog_free_client_memory.h"
+#ifndef D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_
+#define D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_
 
-#include <stddef.h>
-
-#include "../../d2_dll.h"
 #include "../../d2_std_types.h"
 
-typedef int (__fastcall *FuncType)(
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
+
+void D2_Fog_Free_Init(void);
+
+int D2_Fog_Free(
     void* ptr,
     const char* source_file,
     i32 line,
     i32 unused__set_to_0);
 
-static FuncType func_ptr;
+#ifdef __cplusplus
+} /* extern "C" */
+#endif /* __cplusplus */
 
-static unsigned short GetOrdinal(void) {
-  /* Valid for 1.07 and up. */
-  return 10043;
-}
-
-/**
- * External
- */
-
-void D2_Fog_FreeClientMemory_Init(void) {
-  func_ptr = (FuncType)D2Dll_GetAddressFromOrdinal(
-      D2Dll_kD2GFX,
-      GetOrdinal());
-}
-
-int D2_Fog_FreeClientMemory(
-    void* ptr,
-    const char* source_file,
-    i32 line,
-    i32 unused__set_to_0) {
-  return func_ptr(ptr, source_file, line, unused__set_to_0);
-}
+#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_ */

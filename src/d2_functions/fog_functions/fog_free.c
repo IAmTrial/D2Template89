@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-#include "fog_alloc_client_memory.h"
+#include "fog_free.h"
 
 #include <stddef.h>
 
 #include "../../d2_dll.h"
 #include "../../d2_std_types.h"
 
-typedef void* (__fastcall *FuncType)(
-    i32 size,
+typedef int (__fastcall *FuncType)(
+    void* ptr,
     const char* source_file,
     i32 line,
     i32 unused__set_to_0);
@@ -32,23 +32,23 @@ static FuncType func_ptr;
 
 static unsigned short GetOrdinal(void) {
   /* Valid for 1.07 and up. */
-  return 10042;
+  return 10043;
 }
 
 /**
  * External
  */
 
-void D2_Fog_AllocClientMemory_Init(void) {
+void D2_Fog_Free_Init(void) {
   func_ptr = (FuncType)D2Dll_GetAddressFromOrdinal(
-      D2Dll_kD2GFX,
+      D2Dll_kFog,
       GetOrdinal());
 }
 
-void* D2_Fog_AllocClientMemory(
-    i32 size,
+int D2_Fog_Free(
+    void* ptr,
     const char* source_file,
     i32 line,
     i32 unused__set_to_0) {
-  return func_ptr(size, source_file, line, unused__set_to_0);
+  return func_ptr(ptr, source_file, line, unused__set_to_0);
 }

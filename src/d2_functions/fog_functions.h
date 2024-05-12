@@ -18,8 +18,8 @@
 #ifndef D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_H_
 #define D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_H_
 
-#include "fog_functions/fog_alloc_client_memory.h"
-#include "fog_functions/fog_free_client_memory.h"
+#include "fog_functions/fog_alloc.h"
+#include "fog_functions/fog_free.h"
 
 #ifdef __cplusplus
 extern "C" {
