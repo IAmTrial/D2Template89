@@ -15,8 +15,8 @@
  * limitations under the License.
  */
 
-#ifndef D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_CLIENT_MEMORY_H_
-#define D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_CLIENT_MEMORY_H_
+#ifndef D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_H_
+#define D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_H_
 
 #include "../../d2_std_types.h"
 
@@ -24,10 +24,10 @@
 extern "C" {
 #endif /* __cplusplus */
 
-void D2_Fog_FreeClientMemory_Init(void);
+void D2_Fog_Alloc_Init(void);
 
-int D2_Fog_FreeClientMemory(
-    void* ptr,
+void* D2_Fog_Alloc(
+    i32 size,
     const char* source_file,
     i32 line,
     i32 unused__set_to_0);
@@ -36,4 +36,4 @@ int D2_Fog_FreeClientMemory(
 } /* extern "C" */
 #endif /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_CLIENT_MEMORY_H_ */
+#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_H_ */

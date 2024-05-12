@@ -17,10 +17,10 @@
 
 #include "fog_functions.h"
 
-#include "fog_functions/fog_alloc_client_memory.h"
-#include "fog_functions/fog_free_client_memory.h"
+#include "fog_functions/fog_alloc.h"
+#include "fog_functions/fog_free.h"
 
 void D2_Fog_Functions_Init(void) {
-  D2_Fog_AllocClientMemory_Init();
-  D2_Fog_FreeClientMemory_Init();
+  D2_Fog_Alloc_Init();
+  D2_Fog_Free_Init();
 }

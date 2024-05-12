@@ -69,8 +69,8 @@ LINK32=link.exe
 # PROP Intermediate_Dir "Debug"
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
-# ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "D2TEMPLATE89_EXPORTS" /YX /FD /GZ  /c
-# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /FD /GZ  /c
+# ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "D2TEMPLATE89_EXPORTS" /YX /FD /GZ /c
+# ADD CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /FD /GZ /c
 # SUBTRACT CPP /YX
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
@@ -153,19 +153,19 @@ InputName=d2win_load_mpq_shim
 # PROP Default_Filter ""
 # Begin Source File
 
-SOURCE=.\src\d2_functions\fog_functions\fog_alloc_client_memory.c
+SOURCE=.\src\d2_functions\fog_functions\fog_alloc.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\d2_functions\fog_functions\fog_alloc_client_memory.h
+SOURCE=.\src\d2_functions\fog_functions\fog_alloc.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\d2_functions\fog_functions\fog_free_client_memory.c
+SOURCE=.\src\d2_functions\fog_functions\fog_free.c
 # End Source File
 # Begin Source File
 
-SOURCE=.\src\d2_functions\fog_functions\fog_free_client_memory.h
+SOURCE=.\src\d2_functions\fog_functions\fog_free.h
 # End Source File
 # End Group
 # Begin Source File

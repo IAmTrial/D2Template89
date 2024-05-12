@@ -15,25 +15,40 @@
  * limitations under the License.
  */
 
-#ifndef D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_CLIENT_MEMORY_H_
-#define D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_CLIENT_MEMORY_H_
+#include "fog_alloc.h"
 
+#include <stddef.h>
+
+#include "../../d2_dll.h"
 #include "../../d2_std_types.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
-void D2_Fog_AllocClientMemory_Init(void);
-
-void* D2_Fog_AllocClientMemory(
+typedef void* (__fastcall *FuncType)(
     i32 size,
     const char* source_file,
     i32 line,
     i32 unused__set_to_0);
 
-#ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+static FuncType func_ptr;
 
-#endif /* D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_ALLOC_CLIENT_MEMORY_H_ */
+static unsigned short GetOrdinal(void) {
+  /* Valid for 1.07 and up. */
+  return 10042;
+}
+
+/**
+ * External
+ */
+
+void D2_Fog_Alloc_Init(void) {
+  func_ptr = (FuncType)D2Dll_GetAddressFromOrdinal(
+      D2Dll_kD2GFX,
+      GetOrdinal());
+}
+
+void* D2_Fog_Alloc(
+    i32 size,
+    const char* source_file,
+    i32 line,
+    i32 unused__set_to_0) {
+  return func_ptr(size, source_file, line, unused__set_to_0);
+}
