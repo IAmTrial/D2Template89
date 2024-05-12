@@ -24,7 +24,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 enum D2Dll {
   D2Dll_kBNClient,
@@ -59,7 +59,7 @@ void* D2Dll_GetAddressFromOffset(enum D2Dll dll, ptrdiff_t offset);
 void* D2Dll_GetAddressFromOrdinal(enum D2Dll dll, unsigned short ordinal);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_DLL_H_ */
+#endif  /* D2TEMPLATE89_D2_DLL_H_ */

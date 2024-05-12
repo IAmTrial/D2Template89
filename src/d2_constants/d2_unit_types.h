@@ -46,4 +46,4 @@ enum D2C_UnitTypes {
   D2C_UnitTypes_kTile = 5,
 };
 
-#endif /* D2TEMPLATE89_D2_CONSTANTS_D2_UNIT_TYPES_H_ */
+#endif  /* D2TEMPLATE89_D2_CONSTANTS_D2_UNIT_TYPES_H_ */

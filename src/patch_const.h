@@ -47,7 +47,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 extern const unsigned char kPatchJmp[1];
 extern const unsigned char kPatchCall[1];
@@ -61,7 +61,7 @@ extern const unsigned char kPatchRetX[1];
 extern const unsigned char kPatchNop[256];
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_PATCH_CONST_H_ */
+#endif  /* D2TEMPLATE89_PATCH_CONST_H_ */

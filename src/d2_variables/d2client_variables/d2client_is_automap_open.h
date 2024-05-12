@@ -22,14 +22,14 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 extern i32* D2_D2Client_IsAutomapOpen;
 
 void D2_D2Client_IsAutomapOpen_Init(void);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_VARIABLES_D2CLIENT_VARIABLES_D2CLIENT_IS_AUTOMAP_OPEN_H_ */
+#endif  /* D2TEMPLATE89_D2_VARIABLES_D2CLIENT_VARIABLES_D2CLIENT_IS_AUTOMAP_OPEN_H_ */

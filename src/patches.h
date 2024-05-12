@@ -47,12 +47,12 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 void Patches_Apply(void);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_PATCHES_H_ */
+#endif  /* D2TEMPLATE89_PATCHES_H_ */

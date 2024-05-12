@@ -31,4 +31,4 @@
 
 #pragma pack(pop)
 
-#endif /* D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_ */
+#endif  /* D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_ */

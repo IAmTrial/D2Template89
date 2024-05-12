@@ -24,7 +24,7 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 void D2_D2Win_LoadMpq_Init(void);
 
@@ -52,7 +52,7 @@ struct D2MpqArchiveHandle* D2_D2Win_LoadMpq(
 #endif
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_D2WIN_LOAD_MPQ_H_ */
+#endif  /* D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_D2WIN_LOAD_MPQ_H_ */

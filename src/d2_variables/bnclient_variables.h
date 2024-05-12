@@ -22,12 +22,12 @@
 
 #ifdef __cplusplus
 extern "C" {
-#endif /* __cplusplus */
+#endif  /* __cplusplus */
 
 void D2_BNClient_Variables_Init(void);
 
 #ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
+}  /* extern "C" */
+#endif  /* __cplusplus */
 
-#endif /* D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_ */
+#endif  /* D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_ */
