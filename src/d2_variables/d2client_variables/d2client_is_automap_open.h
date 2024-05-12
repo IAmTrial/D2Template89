@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2_VARIABLES_D2CLIENT_VARIABLES_D2CLIENT_IS_AUTOMAP_OPEN_H_
 #define D2TEMPLATE89_D2_VARIABLES_D2CLIENT_VARIABLES_D2CLIENT_IS_AUTOMAP_OPEN_H_
 
-#include "../../d2_std_types.h"
+#include "d2_std_types.h"
 
 #ifdef __cplusplus
 extern "C" {

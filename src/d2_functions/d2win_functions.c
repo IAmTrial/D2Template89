@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-#include "d2win_functions.h"
+#include "d2_functions/d2win_functions.h"
 
-#include "d2win_functions/d2win_load_mpq.h"
+#include "d2_functions/d2win_functions/d2win_load_mpq.h"
 
 void D2_D2Win_Functions_Init(void) {
   D2_D2Win_LoadMpq_Init();

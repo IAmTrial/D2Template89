@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-#include "d2win_load_mpq.h"
+#include "d2_functions/d2win_functions/d2win_load_mpq.h"
 
 #include <stddef.h>
 
-#include "../../d2_dll.h"
-#include "../../d2_std_types.h"
-#include "../../d2_structs/d2_mpq_archive_handle.h"
-#include "../../d2_version.h"
+#include "d2_dll.h"
+#include "d2_std_types.h"
+#include "d2_structs/d2_mpq_archive_handle.h"
+#include "d2_version.h"
 
 #if D2_VERSION <= D2_VERSION_1_10
 

@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-#include "fog_free.h"
+#include "d2_functions/fog_functions/fog_free.h"
 
 #include <stddef.h>
 
-#include "../../d2_dll.h"
-#include "../../d2_std_types.h"
+#include "d2_dll.h"
+#include "d2_std_types.h"
 
 typedef int (__fastcall *FuncType)(
     void* ptr,
