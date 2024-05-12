@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-#include "fog_functions.h"
+#include "d2_functions/fog_functions.h"
 
-#include "fog_functions/fog_alloc.h"
-#include "fog_functions/fog_free.h"
+#include "d2_functions/fog_functions/fog_alloc.h"
+#include "d2_functions/fog_functions/fog_free.h"
 
 void D2_Fog_Functions_Init(void) {
   D2_Fog_Alloc_Init();

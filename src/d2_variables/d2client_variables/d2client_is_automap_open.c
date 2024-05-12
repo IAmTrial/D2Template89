@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-#include "d2client_is_automap_open.h"
+#include "d2_variables/d2client_variables/d2client_is_automap_open.h"
 
 #include <stddef.h>
 
-#include "../../d2_dll.h"
-#include "../../d2_std_types.h"
-#include "../../d2_structs/d2_mpq_archive_handle.h"
-#include "../../d2_version.h"
+#include "d2_dll.h"
+#include "d2_std_types.h"
+#include "d2_structs/d2_mpq_archive_handle.h"
+#include "d2_version.h"
 
 static ptrdiff_t GetOffset(void) {
 #if D2_VERSION == D2_VERSION_1_09D

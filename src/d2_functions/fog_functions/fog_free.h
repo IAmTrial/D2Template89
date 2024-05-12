@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_
 #define D2TEMPLATE89_D2_FUNCTIONS_FOG_FUNCTIONS_FOG_FREE_H_
 
-#include "../../d2_std_types.h"
+#include "d2_std_types.h"
 
 #ifdef __cplusplus
 extern "C" {

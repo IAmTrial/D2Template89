@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_
 #define D2TEMPLATE89_D2_VARIABLES_BNCLIENT_VARIABLES_H_
 
-#include "bnclient_variables/bnclient_gateway_ip_v4_address.h"
+#include "d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.h"
 
 #ifdef __cplusplus
 extern "C" {

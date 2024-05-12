@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-#include "bnclient_variables.h"
+#include "d2_variables/bnclient_variables.h"
 
-#include "bnclient_variables/bnclient_gateway_ip_v4_address.h"
+#include "d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.h"
 
 void D2_BNClient_Variables_Init(void) {
   D2_BNClient_GatewayIpV4Address_Init();

@@ -20,7 +20,7 @@
 
 #include <windows.h>
 
-#include "../d2_std_types.h"
+#include "d2_std_types.h"
 
 #pragma pack(push, 1)
 

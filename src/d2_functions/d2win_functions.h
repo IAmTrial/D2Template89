@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_H_
 #define D2TEMPLATE89_D2_FUNCTIONS_D2WIN_FUNCTIONS_H_
 
-#include "d2win_functions/d2win_load_mpq.h"
+#include "d2_functions/d2win_functions/d2win_load_mpq.h"
 
 #ifdef __cplusplus
 extern "C" {

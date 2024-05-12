@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_
 #define D2TEMPLATE89_D2_STRUCTS_D2_LRTB_RECT_H_
 
-#include "../d2_std_types.h"
+#include "d2_std_types.h"
 
 #pragma pack(push, 1)
 

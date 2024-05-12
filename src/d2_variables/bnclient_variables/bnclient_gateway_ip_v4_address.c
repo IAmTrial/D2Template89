@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-#include "bnclient_gateway_ip_v4_address.h"
+#include "d2_variables/bnclient_variables/bnclient_gateway_ip_v4_address.h"
 
 #include <stddef.h>
 
-#include "../../d2_dll.h"
-#include "../../d2_std_types.h"
-#include "../../d2_structs/d2_mpq_archive_handle.h"
-#include "../../d2_version.h"
+#include "d2_dll.h"
+#include "d2_std_types.h"
+#include "d2_structs/d2_mpq_archive_handle.h"
+#include "d2_version.h"
 
 static ptrdiff_t GetOffset(void) {
 #if D2_VERSION == D2_VERSION_1_09D

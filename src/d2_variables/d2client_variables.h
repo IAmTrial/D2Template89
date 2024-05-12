@@ -18,7 +18,7 @@
 #ifndef D2TEMPLATE89_D2_VARIABLES_D2CLIENT_VARIABLES_H_
 #define D2TEMPLATE89_D2_VARIABLES_D2CLIENT_VARIABLES_H_
 
-#include "d2client_variables/d2client_is_automap_open.h"
+#include "d2_variables/d2client_variables/d2client_is_automap_open.h"
 
 #ifdef __cplusplus
 extern "C" {

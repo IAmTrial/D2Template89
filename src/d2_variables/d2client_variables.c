@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-#include "d2client_variables.h"
+#include "d2_variables/d2client_variables.h"
 
-#include "d2client_variables/d2client_is_automap_open.h"
+#include "d2_variables/d2client_variables/d2client_is_automap_open.h"
 
 void D2_D2Client_Variables_Init(void) {
   D2_D2Client_IsAutomapOpen_Init();
